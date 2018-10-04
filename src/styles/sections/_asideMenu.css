@@ -1,0 +1,25 @@
+.asideMenu {
+  /* min-width: 230px; */
+  line-height: 2;
+  border: 1px solid lightgrey;
+}
+
+.asideMenu a {
+  color: rgb(37, 37, 37);
+  font-size: 0.9rem;
+}
+
+.asideMenu .nav-link {
+  width: 100px;
+}
+
+.asideMenu li:hover {
+  font-weight: 600;
+  transition: font-weight 0.3s;
+}
+.asideMenu a > i {
+  font-size: 1.45rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}

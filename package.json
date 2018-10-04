@@ -1,0 +1,36 @@
+{
+  "name": "project6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rodder1200/project6.git"
+  },
+  "author": "Roman Goncharuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rodder1200/project6/issues"
+  },
+  "homepage": "https://github.com/Rodder1200/project6#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "del": "^3.0.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-file-include": "^2.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "normalize.css": "^8.0.0"
+  }
+}

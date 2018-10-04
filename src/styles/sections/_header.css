@@ -1,0 +1,18 @@
+.header .dropdown-item {
+  line-height: 2;
+  cursor: pointer;
+}
+
+.header .dropdown-item:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.header .dropdown-divider {
+  margin: 0;
+}
+
+.header .nav-item {
+  margin-right: 20px;
+  margin-left: 20px;
+}
