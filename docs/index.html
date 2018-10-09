@@ -15,42 +15,44 @@
 </head>
 
 <body>
-    <header class="header">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Messages <span class="badge badge-danger">27</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">People <span class="badge badge-danger">3</span></a>
-            </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-            <li class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Profile
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <button class="dropdown-item" type="button">All users</button>
-                    <div class="dropdown-divider"></div>
-                    <button class="dropdown-item" type="button">Verified</button>
-                    <div class="dropdown-divider"></div>
-                    <button class="dropdown-item" type="button">Banned</button>
-                    <div class="dropdown-divider"></div>
-                    <button class="dropdown-item" type="button">Deleted</button>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Log Out</a>
-            </li>
-        </ul>
-    </nav>
+    <header class="header bg-dark">
+    <div class="wrapper">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Messages <span class="badge badge-danger">27</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">People <span class="badge badge-danger">3</span></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Profile
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">All users</button>
+                        <div class="dropdown-divider"></div>
+                        <button class="dropdown-item" type="button">Verified</button>
+                        <div class="dropdown-divider"></div>
+                        <button class="dropdown-item" type="button">Banned</button>
+                        <div class="dropdown-divider"></div>
+                        <button class="dropdown-item" type="button">Deleted</button>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Log Out</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </header>
-    <div class="row p-0 m-0">
+    <div class="wrapper row p-0 mx-auto">
         <aside class="asideMenu col-md-3 col-xl-2">
     <nav class="navbar bg-light">
         <ul class="navbar-nav">
@@ -88,8 +90,8 @@
         </ol>
     </nav>
 </header>
-                <h1>Chef</h1>
-                <section class="pages">
+                <h2>Chef</h2>
+                <div class="pages">
                     <nav>
                         <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item">
@@ -125,19 +127,19 @@
             </div>
             <div class="input-group mb-3 mt-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">
+                    <span class="input-group-text" id="basic-addon2">
                         <i class="fas fa-user"></i>
                     </span>
                 </div>
-                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon2">
             </div>
             <div class="input-group mb-3 mt-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">
+                    <span class="input-group-text" id="basic-addon3">
                         <i class="fas fa-user"></i>
                     </span>
                 </div>
-                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon3">
             </div>
             <div class="dropdown mb-3 mt-3">
                 <button class="form-control dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
@@ -241,7 +243,7 @@
                             molestias perferendis, sapiente doloremque porro, natus id adipisci, veniam nobis
                             repudiandae necessitatibus?</div>
                     </div>
-                </section>
+                </div>
             </section>
             <aside class="asideCards col-lg-5 mb-5">
     <div class="card m-3 shadow">
@@ -290,7 +292,7 @@
         </div>
 
         <div class="d-flex flex-column">
-            <iframe width="320" height="240" src="https://www.youtube.com/embed/INTPZVuMfbA" frameborder="0" allow="autoplay; encrypted-media"
+            <iframe width="320" height="240" src="https://www.youtube.com/embed/INTPZVuMfbA" allow="autoplay; encrypted-media"
                 allowfullscreen></iframe>
             <div class="form-check-inline mb-5">
                 <label class="form-check-label">

@@ -448,3 +448,7 @@ template {
   background-color: #007bff;
   color: #fff;
 }
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
