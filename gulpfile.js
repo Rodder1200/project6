@@ -5,7 +5,7 @@ var rename = require("gulp-rename");
 var uglify = require("gulp-uglify");
 var concat = require("gulp-concat");
 var sourcemaps = require("gulp-sourcemaps");
-var fileinclude = require("gulp-file-include");
+var fileInclude = require("gulp-file-include");
 var concatCss = require("gulp-concat-css");
 
 /*---------Server---------*/
@@ -19,12 +19,12 @@ gulp.task("server", function() {
   gulp.watch("docs/**/*").on("change", browserSync.reload);
 });
 
-/*---------Pug-compile---------*/
+/*---------HTML-compile---------*/
 gulp.task("templates:compile", function buildHTML() {
   return gulp
     .src(["src/template/index.html"])
     .pipe(
-      fileinclude({
+      fileInclude({
         prefix: "@@",
         basepath: "@file"
       })
