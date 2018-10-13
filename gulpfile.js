@@ -7,6 +7,10 @@ var concat = require("gulp-concat");
 var sourcemaps = require("gulp-sourcemaps");
 var fileInclude = require("gulp-file-include");
 var concatCss = require("gulp-concat-css");
+var imagemin = require("gulp-imagemin");
+var imageminJpegRecompress = require("imagemin-jpeg-recompress");
+var pngquant = require("imagemin-pngquant");
+var cache = require("gulp-cache");
 
 /*---------Server---------*/
 gulp.task("server", function() {
@@ -64,7 +68,36 @@ gulp.task("copy:fonts", function() {
 
 /* ------------ Copy images ------------- */
 gulp.task("copy:images", function() {
-  return gulp.src("./src/imgs/**/*.*").pipe(gulp.dest("docs/imgs"));
+  return gulp
+    .src("./src/imgs/**/*.*")
+    .pipe(
+      cache(
+        imagemin(
+          [
+            imagemin.gifsicle({ interlaced: true }),
+            imagemin.jpegtran({ progressive: true }),
+            imageminJpegRecompress({
+              loops: 5,
+              min: 65,
+              max: 70,
+              quality: "medium"
+            }),
+            imagemin.svgo(),
+            imagemin.optipng({ optimizationLevel: 3 }),
+            pngquant({ quality: "65-70", speed: 5 })
+          ],
+          {
+            verbose: true
+          }
+        )
+      )
+    )
+    .pipe(gulp.dest("docs/imgs"));
+});
+
+// Clearing the cache
+gulp.task("clear", function(done) {
+  return cache.clearAll(done);
 });
 
 /* ------------ Copy ------------- */
